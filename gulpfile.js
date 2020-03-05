@@ -1,32 +1,33 @@
 //Подключаем модуль галпа
-const gulp = require('gulp');
+const {src, dest, watch} = require('gulp');
 // Подкдючаем модуль mini-css
 const min = require('gulp-mini-css');
 const minCSS =require('gulp-clean-css');
+const sass = require('gulp-sass');
 
-const  browserSync = require('browser-sync').create();
-
-
-gulp.task ('hello', function(done){
-    console.log ('Привет мир!');
-    done();
-});
+const browserSync = require('browser-sync').create();
 
 // Static server
-gulp.task('browser-sync', function() {
+ 
+function bs() {
+    serveSass();
     browserSync.init({
         server: {
             baseDir: "src/"
         }
     });
-    gulp.watch("src/*.html").on('change', browserSync.reload);
-});
+    watch("src/*.html").on('change', browserSync.reload);
+    watch("./sass/**/*.sass", serveSass);
+    watch("./js/*.js").on('change', browserSync.reload);
+};
 
-gulp.task('min', function(){
-    return gulp.src('src/css/*.css')
-    .pipe(minCSS())
-    .pipe(min({ext:'-min.css'}))
-    .pipe(gulp.dest('dist/css'));
-});
+// Compile sass into CSS & auto-inject into browsers
+function serveSass() {
+    return src("./sass/*.sass")
+        .pipe(sass())
+        .pipe(dest("./css"))
+        .pipe(browserSync.stream());
+};
 
+exports.serve = bs;
 
