@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "browser-sync": "^2.26.7",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-mini-css": "0.0.3"
   }
 }
