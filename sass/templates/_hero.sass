@@ -1,19 +1,44 @@
 .hero
-    &__content
     position: relative
     background: $dark url('../img/hero-bg.jpg') no-repeat center/ cover
     height: 100vh
     color: $light
-    padding-top: 100px
+    padding-top: 120px
+    padding-left: 150px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    &__container
+        max-width: 460px
+    &__text
+        font-size: 21px
+        max-width: 670px
+       
     &__instagram
         max-width: 80px
         position: absolute
         left: 0
         top: 0
-
+    &__scrol_down
+        position: absolute
+        bottom: 0
+        left: 0
+        min-width: 247px
+        min-height: 97px
+        background-color: $dark
+        display: flex
+        justify-content: center
+        align-items: center
+        text-transform: uppercase
+        color: $light
+        text-decoration: none
 .title
     margin: 0
-
+    font-family: 'Yeseva One', cursive
+    text-transform: uppercase
+    font-size: 40px
+    &--primary
+        color: $primary
 .instagram
     background-color: $dark
     height: 100%
