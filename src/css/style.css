@@ -486,8 +486,11 @@ template {
       background-color: #E3B873;
       margin: 0 10px; }
 
-.section-title__types {
+.section__types {
   margin-bottom: 2rem; }
+
+.types__section {
+  margin-bottom: 18rem; }
 
 .col {
   display: flex;
@@ -548,7 +551,22 @@ template {
     flex-direction: column;
     align-items: center; }
     .col__card {
-      margin-bottom: 15.42rem; } }
+      margin-bottom: 12rem; }
+  .card__text {
+    position: absolute;
+    left: 0; }
+  .types__section {
+    margin-bottom: 4rem; } }
+
+.desing__text {
+  font-family: 'FuturaBookC',cursive;
+  text-align: center;
+  padding-bottom: 2.78rem;
+  line-height: 1.9rem; }
+
+.desing__section {
+  margin-top: 2rem;
+  margin-bottom: 22rem; }
 
 @media screen and (max-width: 1200px) {
   html {
