@@ -322,7 +322,8 @@ template {
 .container {
   width: 85%;
   max-width: 1256px;
-  margin: auto; }
+  margin: auto;
+  height: 100%; }
 
 /*Переменныe*/
 .button {
@@ -469,8 +470,11 @@ template {
 .section-title {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Yeseva One', cursive; }
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.28rem; }
   .section-title__images {
+    margin-top: 0.92rem;
+    margin-bottom: 2.21rem;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -481,6 +485,70 @@ template {
       height: 2px;
       background-color: #E3B873;
       margin: 0 10px; }
+
+.section-title__types {
+  margin-bottom: 2rem; }
+
+.col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 32%; }
+
+.card {
+  position: relative;
+  margin-right: 1%; }
+  .card:last-child {
+    margin-right: 0; }
+  .card__text {
+    position: absolute;
+    left: 2rem;
+    font-size: 1.28rem;
+    font-family: 'Yeseva One', cursive;
+    text-transform: none;
+    background: #ffffff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    max-width: 26.6rem;
+    margin: 0 auto;
+    padding: 0.1rem 0.8rem 0.5rem 0.8rem;
+    margin-top: -8.4rem; }
+  .card__item {
+    font-size: 1rem;
+    font-family: 'FuturaBookC';
+    line-height: 1.78rem; }
+  .card__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.29rem;
+    margin-bottom: 0.4rem;
+    padding-left: 1.1rem; }
+  .card__list {
+    margin: 0;
+    padding: 0 0 0 0.5rem;
+    font-size: 1.07rem;
+    line-height: 1.2rem;
+    color: #959595;
+    margin-bottom: 1rem;
+    padding-left: 2.4rem;
+    padding-right: 2.21rem;
+    padding-bottom: 2rem; }
+  .card__pricetag {
+    position: absolute;
+    left: 0;
+    bottom: -1.2rem;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    background-color: #E3B873;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-family: 'Yeseva One',cursive;
+    text-transform: uppercase; }
+
+@media screen and (max-width: 760px) {
+  .col {
+    flex-direction: column;
+    align-items: center; }
+    .col__card {
+      margin-bottom: 15.42rem; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -534,3 +602,6 @@ html {
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 14px; }
+
+img {
+  max-width: 100%; }
