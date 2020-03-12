@@ -417,10 +417,10 @@ template {
     top: 0; }
   .hero__scrol_down {
     position: absolute;
-    bottom: 0;
+    bottom: -3rem;
     left: 0;
-    min-width: 17.6rem;
-    min-height: 6.92rem;
+    min-width: 16.6rem;
+    min-height: 5.92rem;
     background-color: #131313;
     display: flex;
     justify-content: center;
@@ -518,12 +518,12 @@ template {
   .card__item {
     font-size: 1rem;
     font-family: 'FuturaBookC';
-    line-height: 1.78rem; }
+    line-height: 1.65rem; }
   .card__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.29rem;
     margin-bottom: 0.4rem;
-    padding-left: 1.1rem; }
+    padding-left: 0.96rem; }
   .card__list {
     margin: 0;
     padding: 0 0 0 0.5rem;
@@ -531,13 +531,13 @@ template {
     line-height: 1.2rem;
     color: #959595;
     margin-bottom: 1rem;
-    padding-left: 2.4rem;
+    padding-left: 2.2rem;
     padding-right: 2.21rem;
     padding-bottom: 2rem; }
   .card__pricetag {
     position: absolute;
-    left: 0;
-    bottom: -1.2rem;
+    left: 0.1rem;
+    bottom: -1.5rem;
     color: #FFFFFF;
     font-size: 1.2rem;
     background-color: #E3B873;
