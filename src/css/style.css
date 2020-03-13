@@ -327,9 +327,9 @@ template {
 
 /*Переменныe*/
 .button {
-  font-family: 'FuturaDemiC';
+  font-family: 'Futura Demi';
   font-size: 0.92rem;
-  padding: 0.92rem 1.4rem;
+  padding: 0.9rem 1.5rem;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
@@ -366,21 +366,23 @@ template {
 .menu__contacts {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-left: -2rem; }
+  align-items: center; }
 
 .logo {
   color: #E3B873;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'FuturaBookC';
-  font-size: 1rem; }
+  font-family: 'Futura Demi';
+  font-size: 1rem;
+  line-height: 1.14rem; }
 
 .nav__item {
   text-decoration: none;
   color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 1.14rem;
   text-transform: uppercase;
-  margin-right: 2.6rem;
+  margin-right: 2.45rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -390,8 +392,12 @@ template {
   margin-top: 0.3rem; }
 
 .contacts__phone {
-  margin-right: 2.9rem;
-  margin-bottom: 0.2rem; }
+  font-family: 'Futura Demi';
+  margin-right: 3.1rem;
+  margin-bottom: 0.3rem; }
+
+.contacts__button {
+  margin-right: 0.5rem; }
 
 .hero {
   position: relative;
