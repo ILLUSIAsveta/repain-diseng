@@ -496,6 +496,13 @@ template {
       background-color: #E3B873;
       margin: 0 10px; }
 
+.section-title {
+  font-family: 'Yeseva One';
+  font-weight: normal;
+  font-size: 1.428rem;
+  line-height: 2rem;
+  text-align: center; }
+
 .section__types {
   margin-bottom: 2rem; }
 
@@ -506,7 +513,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 32%; }
+  flex-basis: 31%; }
 
 .card {
   position: relative;
@@ -515,7 +522,7 @@ template {
     margin-right: 0; }
   .card__text {
     position: absolute;
-    left: 2rem;
+    left: 2.7rem;
     font-size: 1.28rem;
     font-family: 'Yeseva One', cursive;
     text-transform: none;
@@ -523,31 +530,42 @@ template {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
     max-width: 26.6rem;
     margin: 0 auto;
-    padding: 0.1rem 0.8rem 0.5rem 0.8rem;
-    margin-top: -8.4rem; }
+    padding: 1.78rem 3.5rem 1.64rem 2.21rem;
+    margin-top: -9.3rem; }
   .card__item {
     font-size: 1rem;
     font-family: 'FuturaBookC';
-    line-height: 1.65rem; }
+    margin-left: 0.6rem;
+    margin-bottom: 0.1rem; }
   .card__title {
     font-family: 'Yeseva One', cursive;
-    font-size: 1.29rem;
-    margin-bottom: 0.4rem;
-    padding-left: 0.96rem; }
+    font-size: 1.29rem; }
+  .card h3 {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.28rem;
+    line-height: 1.78rem;
+    margin-top: -0.2rem;
+    margin-left: 0.6rem; }
   .card__list {
-    margin: 0;
+    margin: -0.9rem;
     padding: 0 0 0 0.5rem;
-    font-size: 1.07rem;
-    line-height: 1.2rem;
     color: #959595;
     margin-bottom: 1rem;
-    padding-left: 2.2rem;
-    padding-right: 2.21rem;
-    padding-bottom: 2rem; }
+    padding-left: 1.9rem;
+    padding-right: 2.2rem;
+    padding-bottom: 0.8rem; }
+  .card__list li {
+    font-family: 'FuturaBookC';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.07rem;
+    line-height: 1.78rem; }
   .card__pricetag {
     position: absolute;
-    left: 0.1rem;
-    bottom: -1.5rem;
+    left: 0.6rem;
+    bottom: -2rem;
     color: #FFFFFF;
     font-size: 1.2rem;
     background-color: #E3B873;
@@ -561,12 +579,10 @@ template {
     flex-direction: column;
     align-items: center; }
     .col__card {
-      margin-bottom: 12rem; }
+      margin-bottom: 15rem; }
   .card__text {
     position: absolute;
-    left: 0; }
-  .types__section {
-    margin-bottom: 4rem; } }
+    left: 0; } }
 
 .desing__text {
   font-family: 'FuturaBookC',cursive;
