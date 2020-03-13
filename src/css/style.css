@@ -327,12 +327,13 @@ template {
 
 /*Переменныe*/
 .button {
+  font-family: 'FuturaDemiC';
+  font-size: 0.92rem;
   padding: 0.92rem 1.4rem;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
-  cursor: pointer;
-  font-style: 1.928rem; }
+  cursor: pointer; }
 
 .button--primary {
   color: #FFFFFF;
@@ -344,6 +345,7 @@ template {
   background-color: transparent;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
+  font-weight: 500;
   /*font-family: 'Yeseva One', cursive;*/ }
 
 .header {
@@ -358,7 +360,8 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.7rem 0; }
+  padding-top: 1.5rem;
+  padding-bottom: 1.3em; }
 
 .menu__contacts {
   display: flex;
@@ -367,22 +370,28 @@ template {
 
 .logo {
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'FuturaBookC';
+  font-size: 1rem;
+  margin-left: -2rem; }
 
 .nav__item {
   text-decoration: none;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin-right: 2.857rem;
+  margin-right: 2.6rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
 
 .phone {
-  color: #E3B873; }
+  color: #E3B873;
+  margin-top: 0.3rem; }
 
 .contacts__phone {
-  margin-right: 3.214rem; }
+  margin-right: 2.9rem;
+  margin-bottom: 0.2rem; }
 
 .hero {
   position: relative;
@@ -409,7 +418,8 @@ template {
     font-size: 1.5rem;
     max-width: 670px; }
   .hero__button {
-    margin-right: 20px; }
+    font-size: 0.98rem;
+    font-family: FuturaDemiC; }
   .hero__instagram {
     max-width: 80px;
     position: absolute;
