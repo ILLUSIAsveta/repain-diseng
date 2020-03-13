@@ -366,15 +366,15 @@ template {
 .menu__contacts {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-left: -2rem; }
 
 .logo {
   color: #E3B873;
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'FuturaBookC';
-  font-size: 1rem;
-  margin-left: -2rem; }
+  font-size: 1rem; }
 
 .nav__item {
   text-decoration: none;
