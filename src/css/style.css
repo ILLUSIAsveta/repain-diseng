@@ -327,26 +327,33 @@ template {
 
 /*Переменныe*/
 .button {
+  padding: 1.35rem 1.9rem;
+  text-align: center;
   font-family: 'Futura Demi';
   font-size: 0.92rem;
-  padding: 0.9rem 1.5rem;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
-  cursor: pointer; }
-
-.button--primary {
-  color: #FFFFFF;
-  background-color: #E3B873;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-  transition: box-shadow 0.3s; }
-
-.button--outline {
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  font-weight: 500;
-  /*font-family: 'Yeseva One', cursive;*/ }
+  cursor: pointer;
+  margin-right: 1.3rem; }
+  .button--primary {
+    font-family: 'Futura Demi';
+    border: 1px solid #E3B873;
+    color: #FFFFFF;
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    transition: box-shadow 0.3s;
+    text-transform: uppercase; }
+  .button--outline {
+    padding: 1.35rem 1.85rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-family: 'Futura Demi';
+    font-size: 0.92rem;
+    /*font-family: 'Yeseva One', cursive;*/ }
 
 .header {
   background-color: #131313;
@@ -419,13 +426,25 @@ template {
   .hero__container {
     position: relative;
     max-width: 47.857rem;
-    margin-left: 14.285rem; }
+    margin-left: 3.6rem; }
+  .hero__content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1256px;
+    width: 100%; }
   .hero__text {
-    font-size: 1.5rem;
-    max-width: 670px; }
+    font-family: 'Futura Book';
+    font-size: 1.59rem;
+    max-width: 600px;
+    line-height: 1.9rem; }
+  .hero p {
+    margin-bottom: 2.9rem; }
   .hero__button {
-    font-size: 0.98rem;
-    font-family: FuturaDemiC; }
+    padding: 1.35rem 1.85rem;
+    font-weight: 500;
+    font-family: 'Futura Demi';
+    font-size: 0.92rem;
+    line-height: 1.07rem; }
   .hero__instagram {
     max-width: 80px;
     position: absolute;
@@ -454,7 +473,8 @@ template {
       margin-left: 12px; }
 
 .title {
-  margin: 0;
+  line-height: 3.3rem;
+  line-height: 3.8rem;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem; }
@@ -503,7 +523,7 @@ template {
       margin: 0 10px; }
 
 .section-title {
-  font-family: 'Yeseva One';
+  font-family: 'Yeseva One', cursive;
   font-weight: normal;
   font-size: 1.428rem;
   line-height: 2rem;
@@ -540,14 +560,14 @@ template {
     margin-top: -9.3rem; }
   .card__item {
     font-size: 1rem;
-    font-family: 'FuturaBookC';
+    font-family: 'Futura Book';
     margin-left: 0.6rem;
     margin-bottom: 0.1rem; }
   .card__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.29rem; }
   .card h3 {
-    font-family: 'Yeseva One';
+    font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 1.28rem;
@@ -563,7 +583,7 @@ template {
     padding-right: 2.2rem;
     padding-bottom: 0.8rem; }
   .card__list li {
-    font-family: 'FuturaBookC';
+    font-family: 'Futura Book';
     font-style: normal;
     font-weight: normal;
     font-size: 1.07rem;
@@ -577,7 +597,7 @@ template {
     background-color: #E3B873;
     text-align: center;
     padding: 1rem 2rem;
-    font-family: 'Yeseva One',cursive;
+    font-family: 'Yeseva One', cursive;
     text-transform: uppercase; }
 
 @media screen and (max-width: 760px) {
@@ -591,7 +611,7 @@ template {
     left: 0; } }
 
 .desing__text {
-  font-family: 'FuturaBookC',cursive;
+  font-family: 'Futura Book';
   text-align: center;
   padding-bottom: 2.78rem;
   line-height: 1.9rem; }
