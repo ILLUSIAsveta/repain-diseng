@@ -1,4 +1,5 @@
 .modal
+    visibility: hidden // скрывает модальное окно
     position: fixed
     left: 0
     top:
@@ -11,6 +12,9 @@
     display: flex
     justify-content: center
     align-items: center 
+    &--visible
+        opacity: 1
+        visibility: visible // модификатор для того чтобы появилось модальное окно
     &__dialog
         position: relative
         max-width: 36.36rem

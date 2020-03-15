@@ -20,7 +20,7 @@ function bs() {
     watch("src/*.html").on('change', browserSync.reload);
     watch("./sass/**/*.sass", serveSass);
     watch("./sass/**/*.scss", serveSass);
-    watch("./js/*.js").on('change', browserSync.reload);
+    watch("src/js/*.js").on('change', browserSync.reload);
 };
 
 // Compile sass into CSS & auto-inject into browsers

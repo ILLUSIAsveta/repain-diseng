@@ -681,6 +681,7 @@ template {
   margin-bottom: 22rem; }
 
 .modal {
+  visibility: hidden;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -692,6 +693,9 @@ template {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
