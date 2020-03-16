@@ -11,8 +11,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     closeBtn.addEventListener('click', toggelModal);
+ 
+  document.addEventListener("keydown", function(event) {
+    if (event.key === 'Escape') {
+        modal.classList.remove('modal--visible');
+    }
   });
-
+   });
 
 
   // слушатель событий EventListener
