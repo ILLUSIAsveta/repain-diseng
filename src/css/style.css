@@ -698,7 +698,7 @@ template {
     visibility: visible; }
   .modal__dialog {
     position: relative;
-    max-width: 36.36rem;
+    max-width: 36.32rem;
     background: #131313 url("../img/modal/bg-lines.svg") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
     color: #FFFFFF; }
@@ -714,7 +714,7 @@ template {
     cursor: pointer; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
-    line-height: 2.57rem;
+    line-height: 1.8rem;
     font-size: 1.357rem;
     text-align: center;
     margin: 0;
@@ -725,11 +725,12 @@ template {
   .modal__input {
     margin-bottom: 3.482rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+      margin-bottom: 0.3rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 1.2rem 3.28rem; }
 
 @media screen and (max-width: 1200px) {
   html {

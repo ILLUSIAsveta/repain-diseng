@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+ /*document.addEventListener("DOMContentLoaded", function(event) { 
     const modal = document.querySelector('.modal');
     const modalBtn = document.querySelectorAll('[data-toggel=modal]');
     const closeBtn = document.querySelector('.modal__close')
@@ -24,7 +24,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
    });
+ // слушатель событий EventListener
+*/
 
+$(document).ready(function (){
 
-
-  // слушатель событий EventListener
+    var modal = $('.modal'),
+           modalBtn = $('[data-toggel=modal]'),
+           closeBtn = $('.modal__close');
+      modalBtn.on('click', function(){
+          
+        modal.toggleClass('modal--visible');
+    });
+        closeBtn.on('click', function(){
+            modal.toggleClass('modal--visible');
+    });
+    
+    
+     });
