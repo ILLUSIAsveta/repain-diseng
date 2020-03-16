@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   window.onclick = function(event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+      modal.classList.remove('modal--visible');
     }
   }
    });
-   
+
 
 
   // слушатель событий EventListener
