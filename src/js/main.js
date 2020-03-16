@@ -17,7 +17,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         modal.classList.remove('modal--visible');
     }
   });
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
    });
+   
 
 
   // слушатель событий EventListener
