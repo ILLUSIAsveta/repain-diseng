@@ -38,7 +38,23 @@ $(document).ready(function (){
     });
         closeBtn.on('click', function(){
             modal.toggleClass('modal--visible');
-    });
-    
-    
+        });
+
+
+
+        $(document).keydown(function() {
+                if (event.key === 'Escape') {
+                modal.toggleClass('modal--visible');
+             }
+        });
+        
+        $(document).mouseup(function (e){
+            var modalctr = $("#modal_cinw_ctnr");
+            var modal = $(".modal_cinw");
+            if (!modal.is(e.target) && modal.has(e.target).length === 0){
+            modalctr.hide();
+            }
+           
+            
      });
+    });
