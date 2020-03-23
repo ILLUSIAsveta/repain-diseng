@@ -2,7 +2,7 @@
 const {src, dest, watch} = require('gulp');
 // Подкдючаем модуль mini-css
 const min = require('gulp-mini-css');
-const minCSS =require('gulp-clean-css');
+const css = require('gulp-mini-css');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 
@@ -35,4 +35,6 @@ function serveSass() {
 };
 
 exports.serve = bs;
+
+
 

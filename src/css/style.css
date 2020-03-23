@@ -433,7 +433,8 @@ template {
 
 .menu__contacts {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .logo {
   color: #E3B873;
@@ -455,8 +456,7 @@ template {
     color: #E3B873; }
 
 .phone {
-  color: #E3B873;
-  margin-top: 0.92rem; }
+  color: #E3B873; }
 
 .contacts__phone {
   font-family: 'Futura Demi';
@@ -485,14 +485,14 @@ template {
     top: 0;
     left: 0; }
   .hero__container {
-    position: relative;
-    max-width: 47.857rem;
-    margin-left: 3.6rem; }
-  .hero__content {
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    max-width: 47.857rem; }
+  .hero__content {
     max-width: 1256px;
-    width: 100%; }
+    width: 100%;
+    display: flex; }
   .hero__text {
     font-family: 'Futura Book';
     font-size: 1.59rem;
@@ -773,6 +773,14 @@ template {
 @media screen and (max-height: 500px) {
   .hero__scrol_down {
     display: none; } }
+
+@media screen and (max-width: 380px) {
+  .hero__container {
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto; }
+  .hero____button {
+    max-width: auto; } }
 
 *, *:after, *:before {
   box-sizing: border-box; }
