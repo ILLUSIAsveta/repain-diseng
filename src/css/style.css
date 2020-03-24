@@ -496,7 +496,7 @@ template {
   .hero__text {
     font-family: 'Futura Book';
     font-size: 1.59rem;
-    max-width: 480px;
+    max-width: 38.85rem;
     line-height: 2rem; }
   .hero p {
     padding-bottom: 1.5rem; }
@@ -758,9 +758,13 @@ template {
   .contacts__button {
     display: none; }
   .hero__title {
-    font-size: 1.64rem; }
+    font-size: 1.64rem;
+    margin-top: 6.07rem;
+    margin-bottom: 1.14rem;
+    line-height: 2.21rem; }
   .hero__text {
-    font-size: 1.29rem;
+    font-size: 1.28rem;
+    line-height: 1.71rem;
     margin-bottom: 2.28rem; }
   .hero__container {
     max-width: 22.85rem; }
