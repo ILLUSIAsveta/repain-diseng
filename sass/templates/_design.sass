@@ -1,10 +1,28 @@
 .desing
     &__text
-        font-family: 'Futura Book'
         text-align: center
+       
+        font-family: 'Futura Book'
+        font-style: normal
+        font-weight: normal
+        font-size: 1.42rem
         padding-bottom: 2.78rem
-        line-height: 1.9rem
+        line-height: 1.92rem
     &__section
         margin-top: 2rem
-        margin-bottom: 22rem 
-       
+        background: linear-gradient(to bottom, $light 50%, $dark 50%)
+
+
+
+@media screen and ( max-width: 760px ) 
+    .desing
+        &__section
+            background-color: $dark
+        &__text
+            color: $light
+            line-height: 1.42rem
+            
+
+    .section-title    
+        &__heading    
+            color: $light

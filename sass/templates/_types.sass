@@ -1,3 +1,11 @@
+.row
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+
+.col
+    flex-basis: 32%    
+    
 .section-title
     &__heading
     font-family: 'Yeseva One', cursive
@@ -10,13 +18,10 @@
         margin-bottom: 2rem
 .types 
     &__section
-       margin-bottom: 18rem  
+       margin-bottom: 2rem  
         
-.col   
-    display: flex
-    justify-content: space-between
-    align-items: center
-    flex-basis: 31%
+ 
+    
 .card 
     &__list
     position: relative
@@ -25,74 +30,66 @@
     
         margin-right: 0
     &__text 
-        position: absolute
-        left: 2.7rem
+        position: relative
+        background: #ffffff
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+        max-width: 23.6rem
+        margin: 0 auto
+        margin-top: -9.3rem
+
+      
         font-size: 1.28rem
         font-family: 'Yeseva One', cursive
         text-transform: none
-        background: #ffffff
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
-        max-width: 26.6rem
-        margin: 0 auto
-        padding: 1.78rem 3.5rem 1.64rem 2.21rem
-        margin-top: -9.3rem
+        padding: 1.79rem 2.14rem
+
+    &__title
+        font-family: 'Yeseva One', cursive
+        font-size: 1.29rem 
+        margin-top: 0
+        margin-bottom: 0.7rem
+        font-style: normal
+        font-weight: normal
+
+    &__list    
+        margin: 0rem
+        padding: 0 0 0 1rem
+        font-size: 1.07rem
+        line-height: 1.79rem
+        color: $grey
+        margin-bottom: 2.5rem
+
+    &__pricetag 
+        position: absolute
+        left: 0
+        bottom: -1.79rem
+
+        font-size: 1.29rem  
+        font-family: 'Yeseva One', cursive
+        text-transform: uppercase 
+        background-color: $primary
+        color: $light 
+        padding: 1.214rem 2.6rem
+        text-align: center
     &__item
         font-size: 1rem
         font-family: 'Futura Book'
-        margin-left: 0.6rem
-        margin-bottom: 0.1rem
-    &__title
-        font-family: 'Yeseva One', cursive
-        font-size: 1.29rem
-
-    h3
-        font-family: 'Yeseva One', cursive
-        font-style: normal
-        font-weight: normal
-        font-size: 1.28rem
-        line-height: 1.78rem
-        margin-top: -0.2rem
-        margin-left: 0.6rem
-        
-    &__list    
-        margin: -0.9rem
-        padding: 0 0 0 0.5rem
-        color: $grey
-        margin-bottom: 1rem
-        padding-left: 1.9rem
-        padding-right: 2.2rem
-        padding-bottom: 0.8rem
-    &__list 
-        li 
-            font-family: 'Futura Book'
-            font-style: normal
-            font-weight: normal
-            font-size: 1.07rem
-            line-height: 1.78rem
-    &__pricetag 
-        position: absolute
-        left: 0.6rem
-        bottom: -2rem
-        color: $light 
-        font-size: 1.2rem  
-        background-color: $primary
-        text-align: center
-        padding: 1rem 2rem
-        font-family: 'Yeseva One', cursive
-        text-transform: uppercase
-
+  
 
 @media screen and ( max-width: 760px ) 
-    .col
+    .row
         flex-direction: column 
         align-items: center 
+       
+    .types
         &__card
-         margin-bottom: 15rem    
-    .card        
+            margin-bottom: 4.29rem
+    .card
         &__text
-          position: absolute    
-          left: 0
-          
+            margin-left: 0
+    
+
+    
           
         
     
