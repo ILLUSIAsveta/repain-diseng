@@ -779,7 +779,8 @@ template {
     max-width: 24.14rem; }
   .hero__button {
     min-width: 24.14rem;
-    font-size: 0.92rem; }
+    font-size: 0.92rem;
+    margin-right: 0; }
   .hero__scrol_down {
     display: none; } }
 
