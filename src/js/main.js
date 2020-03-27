@@ -1,4 +1,4 @@
- /*document.addEventListener("DOMContentLoaded", function(event) { 
+ document.addEventListener("DOMContentLoaded", function(event) { 
     const modal = document.querySelector('.modal');
     const modalBtn = document.querySelectorAll('[data-toggel=modal]');
     const closeBtn = document.querySelector('.modal__close')
@@ -25,9 +25,9 @@
   }
    });
  // слушатель событий EventListener
-*/
 
-$(document).ready(function (){
+
+/*$(document).ready(function (){
 
     var modal = $('.modal'),
            modalBtn = $('[data-toggel=modal]'),
@@ -57,4 +57,4 @@ $(document).ready(function (){
            
             
      });
-    });
+    }); */
