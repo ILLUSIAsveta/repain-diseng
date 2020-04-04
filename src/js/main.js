@@ -69,7 +69,7 @@ $('.btn_up').click(function(){
 }); 
 
 $('window').scroll(function(){
-  if ($(this).scrollTop()>200) {
+  if ($(this).scrollTop() > 200) {
     // то сделать кнопку scrollup видимой
     $('.btn_up').fadeIn();
   }

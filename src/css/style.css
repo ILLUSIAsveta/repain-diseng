@@ -430,7 +430,7 @@ template {
   border-radius: 50%;
   border: 2px solid #ccc;
   background: #333;
-  z-index: 100;
+  z-index: 1000;
   outline: none; }
   .btn_up::after {
     content: '';
