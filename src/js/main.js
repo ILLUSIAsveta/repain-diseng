@@ -1,4 +1,4 @@
- document.addEventListener("DOMContentLoaded", function(event) { 
+ /*document.addEventListener("DOMContentLoaded", function(event) { 
     const modal = document.querySelector('.modal');
     const modalBtn = document.querySelectorAll('[data-toggel=modal]');
     const closeBtn = document.querySelector('.modal__close')
@@ -25,10 +25,11 @@
   }
    });
  // слушатель событий EventListener
+*/
 
+$(document).ready(function (){
 
-/*$(document).ready(function (){
-
+        
     var modal = $('.modal'),
            modalBtn = $('[data-toggel=modal]'),
            closeBtn = $('.modal__close');
@@ -37,24 +38,22 @@
         modal.toggleClass('modal--visible');
     });
         closeBtn.on('click', function(){
-            modal.toggleClass('modal--visible');
+          modal.removeClass('modal--visible');;
         });
 
+             
 
 
         $(document).keydown(function() {
                 if (event.key === 'Escape') {
-                modal.toggleClass('modal--visible');
+                modal.removeClass('modal--visible');
              }
         });
-        
-        $(document).mouseup(function (e){
-            var modalctr = $("#modal_cinw_ctnr");
-            var modal = $(".modal_cinw");
-            if (!modal.is(e.target) && modal.has(e.target).length === 0){
-            modalctr.hide();
-            }
-           
-            
-     });
-    }); */
+       
+        $(window).mouseup(function (e){
+          modal.removeClass('modal--visible');
+        });
+}); 
+
+
+      
