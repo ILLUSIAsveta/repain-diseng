@@ -411,8 +411,7 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center;
-  /*font-family: 'Yeseva One', cursive;*/ }
+  align-items: center; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -420,7 +419,33 @@ template {
     border: 1px solid #E3B873;
     border-radius: 1px;
     cursor: pointer;
-    margin-right: 0.64rem; }
+    margin-right: 0.4rem; }
+
+.btn_up {
+  position: fixed;
+  bottom: 3.57rem;
+  right: 7.14rem;
+  width: 3.57rem;
+  height: 3.57rem;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: #333;
+  z-index: 100;
+  outline: none; }
+  .btn_up::after {
+    content: '';
+    width: 0.71rem;
+    height: 0.71rem;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0.28rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    /*font-family: 'Yeseva One', cursive;*/ }
 
 .header {
   background-color: #131313;

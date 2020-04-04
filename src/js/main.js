@@ -53,7 +53,30 @@ $(document).ready(function (){
         $(window).mouseup(function (e){
           modal.removeClass('modal--visible');
         });
+        
+        
+
+
+
+
+
+
+$('body').append('<button class="btn_up"/>');
+
+$('.btn_up').click(function(){
+  $('body').animate({'scrollTop': 0}, 1000);
+  $('html').animate({'scrollTop': 0}, 1000);
 }); 
 
+$('window').scroll(function(){
+  if ($(this).scrollTop()>200) {
+    // то сделать кнопку scrollup видимой
+    $('.btn_up').fadeIn();
+  }
+  // иначе скрыть кнопку scrollup
+  else {
+    $('.btn_up').fadeOut();
+  }
+});
 
-      
+}); 
