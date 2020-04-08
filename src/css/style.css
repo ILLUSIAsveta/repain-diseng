@@ -341,7 +341,7 @@ template {
   flex-basis: 30%; }
 
 .col-50 {
-  flex-basis: 50%; }
+  width: 50%; }
 
 /*Переменныe*/
 .button {
@@ -621,6 +621,53 @@ template {
       height: 1px;
       background-color: #E3B873;
       margin-left: 8px; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    padding-bottom: 2rem;
+    flex-basis: 50%;
+    margin-bottom: 2.42rem; }
+  .swiper-slide__heading {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 0.64rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #FFFFFF; }
+
+.swiper-button-prev {
+  left: 0;
+  bottom: 0;
+  top: auto;
+  background: url("../img/arrow-prev.svg") no-repeat center;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after {
+    display: none; }
+
+.swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background: url("../img/next.svg") no-repeat center;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-next::after {
+    display: none; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -2px; }
 
 .section-title {
   text-align: center; }
