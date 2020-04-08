@@ -1,10 +1,33 @@
-.section-title
-    &__heading
-    text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva One', cursive
-    font-size: 1.28rem
-   
+.section
+    &-title
+        text-align: center
+        &__word
+            display: flex
+            align-items: center
+            &::after
+                content: ''
+                width: 90px
+                height: 1px
+                background-color: $primary
+                margin-left: 2rem   
+        &--left
+            text-align: left
+        
+        &__heading
+            text-transform: uppercase
+            font-family: 'Yeseva One', cursive
+            font-size: 1.28rem
+            line-height: 2.64rem
+            &--primary
+                color: $primary
+        &__text
+            font-family: 'Futura Book'
+            font-style: normal
+            font-weight: normal
+            font-size: 1.28rem
+            line-height: 2.07rem
+            max-width: 31.57rem
+
     &__images
         margin-top: 0.92rem
         margin-bottom: 2.21rem
