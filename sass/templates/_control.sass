@@ -16,10 +16,14 @@
         &__heading
             text-transform: uppercase
             font-family: 'Yeseva One', cursive
-            font-size: 1.28rem
+            font-size: 1.42rem
             line-height: 2.64rem
+            font-style: normal
+            font-weight: normal
             &--primary
                 color: $primary
+            &--light    
+                color: $light    
         &__text
             font-family: 'Futura Book'
             font-style: normal
@@ -28,17 +32,105 @@
             line-height: 2.07rem
             max-width: 31.57rem
 
-    &__images
-        margin-top: 0.92rem
-        margin-bottom: 2.21rem
-        display: flex
-        justify-content: center
-        align-items: center
-        &:after, &:before
+        &__images
+            margin-top: 0.92rem
+            margin-bottom: 2.21rem
+            display: flex
+            justify-content: center
+            align-items: center
+            &:after, &:before
+                content: ' '
+                display: inline-block
+                width: 32px
+                height: 2px
+                background-color: $primary
+                margin: 0 10px
+
+.control
+    &__text
+        
+        margin-top: 2.5rem
+        display: block
+        max-width: 40.785rem
+        margin: auto
+        text-align: center
+        font-size: 1.428rem
+        line-height: 2.4rem
+        
+        &::before
+
+            margin: auto
+            margin-bottom: 1.7rem
+            margin-top: 4.428rem
             content: ' '
-            display: inline-block
-            width: 32px
+            display: block
+            width: 55px
             height: 2px
             background-color: $primary
-            margin: 0 10px
-        
+            border-radius: 30px
+    &__form
+        padding-top: 4.285rem
+        max-width: 55rem
+        display: flex
+        justify-content: space-between
+        margin: auto
+        flex-wrap: wrap
+    &__input
+        border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+        &--grey
+        &::placeholder
+            font-family: 'Futura Medium'
+            font-size: 1.28rem
+            color: $dark
+    &__label   
+        margin-bottom: 5px
+    &__input-group
+        display: flex
+        flex-direction: column  
+        flex-basis: 30%  
+    &__policy
+        flex-basis: 100% 
+        margin-top: 2.8rem
+        font-family: 'Futura Book'
+        font-style: normal
+        font-weight: normal
+        font-size: 1.14rem
+        line-height: 1.57rem
+        &-label
+            display: flex
+            justify-content: center
+    &__button
+        padding: 1.2857rem 4.785rem       
+             
+    &__section-title
+        margin-bottom: 2.214rem
+        margin-top: -25rem
+           
+    &__video 
+        display: block
+        margin: auto
+        display: flex
+        position: relative           
+        max-width: 58.357rem
+        min-height: 31rem
+        background: $dark
+        background: url(../img/video-mask.jpg) no-repeat center
+        background-size: cover
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
+
+        &::before
+            content: ''
+            width: 100%
+            height: 100%
+            background: rgba(black, 0.8)
+            position: absolute
+            top: 0
+            left: 0
+
+.video
+    &__play
+        position: relative
+        margin: auto
+       
+
+                
