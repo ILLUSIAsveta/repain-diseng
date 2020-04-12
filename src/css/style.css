@@ -626,9 +626,15 @@ template {
   display: flex;
   flex-wrap: wrap; }
   .swiper-slide__text {
-    padding-bottom: 2rem;
+    padding-bottom: rem;
     flex-basis: 50%;
-    margin-bottom: 2.42rem; }
+    margin-bottom: 1.3rem; }
+    .swiper-slide__text:last-child {
+      margin-bottom: 7rem; }
+  .swiper-slide__img {
+    max-width: 48.5rem;
+    width: 100%;
+    min-width: 24.28rem; }
   .swiper-slide__heading {
     font-family: 'Yeseva One', cursive;
     font-style: normal;
@@ -637,6 +643,7 @@ template {
     line-height: 1.78rem;
     text-transform: uppercase;
     color: #E3B873;
+    margin-top: 2rem;
     margin-bottom: 0.64rem; }
 
 .swiper-pagination-bullet {
@@ -940,10 +947,12 @@ template {
   line-height: 1.92rem; }
 
 .desing__section {
+  padding-bottom: 4.28rem;
   margin-top: 2rem; }
 
 @media screen and (max-width: 760px) {
   .desing__section {
+    padding-bottom: 4.28rem;
     background-color: #131313; }
   .desing__text {
     width: 100%;
@@ -1157,10 +1166,43 @@ template {
     font-size: 0.85rem;
     margin-left: 1.3rem; }
   .row {
+    margin-left: 1.1rem;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: flex-start; }
   .section-title__word::after {
-    display: none; } }
+    display: none; }
+  .section-title__text {
+    font-family: 'Futura Book';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.57rem;
+    min-width: 21.285rem;
+    text-align: left;
+    margin-top: 2rem; }
+  .swiper-slide__text {
+    margin-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.35rem; }
+  .swiper-slide__value {
+    font-family: 'Futura Book';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.35rem; }
+  .swiper-slide__img {
+    width: 100%;
+    height: 14.417rem;
+    background-size: contain; }
+  .btn_up {
+    position: fixed;
+    bottom: 1.8rem;
+    right: 2.14rem; } }
 
 *, *:after, *:before {
   box-sizing: border-box; }
