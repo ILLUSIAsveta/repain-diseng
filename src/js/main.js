@@ -50,9 +50,9 @@ $(document).ready(function (){
              }
         });
        
-        $(window).mouseup(function (e){
-          modal.removeClass('modal--visible');
-        });
+       // $(window).mouseup(function (e){
+        //  modal.removeClass('modal--visible');
+       // });
         
         
 $('body').append('<button class="btn_up"/>');
@@ -98,6 +98,94 @@ $('window').scroll(function(){
 
 
   new WOW().init();
+
+  // Валидация формы
+ 
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // Строчное правило {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // Правило объект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // Правило сообщений
+    messages: {
+      userName: {
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв"
+    },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате name@domain.com"
+      }
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // compound rule
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв"
+    },
+      userPhone: "Телефон обязателен",
+      
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв",
+      maxlength: "Имя не длинее  15 букв"
+    },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате name@domain.com"
+      }
+    }
+  });
+  // Маска для ввода телефона
+
+  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
   }); 
 
 
