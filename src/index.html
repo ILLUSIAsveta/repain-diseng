@@ -58,12 +58,13 @@
           <a href="#" class="hero__scrol_down">листайте вниз</a>
        </section>
 
-       <section class="section section--dark section-projects">
+       <section class="section section--dark projects__section">
        <div class="container">
 
        <div class="row">
            <div class="col-50">
             <div class="section-title section-title--left wow fadeInDown" >
+                
                 <div class="section-title__heading section-title__heading--primary ">Завершенные <span class="section-title__word">проекты</span></div>
                  <p class="section-title__text  projects__section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14
                       лет работы на строительном рынке мы осчастливили более 1000 семей</p>
@@ -200,7 +201,7 @@
                                 <button class="button button--primary control__button">Отправить</button>
                                 <div class="policy control__policy control__policy-label">
                                     <input type="checkbox" name="policy-checkbox" class="policy__checkbox" id="policy-checkbox" checked>
-                                    <label for="policy-checkbox" class="policy__label  ">я соглашаюсь с обработкой данных</label>
+                                    <label for="policy-checkbox" class="policy__label ">я соглашаюсь с обработкой данных</label>
                                 </div>
                                 
                             </form>
@@ -389,6 +390,7 @@
                 
             </div>
         </div>
+        
        </section>
    </main>
 
@@ -420,26 +422,39 @@
 
                 
                 <div class="policy footer__policy">
-                    <input type="checkbox" name="policy-checkbox" class="policy__checkbox" id="policy-checkbox" checked>
-                    <label for="policy-checkbox" class="policy__label policy__label--center ">я соглашаюсь с обработкой данных</label>
+                    <input type="checkbox" name="policy-checkbox" class="policy__checkbox" id="policy-checkbox-footer" checked>
+                    <label for="policy-checkbox-footer" class="policy__label policy__label--center ">я соглашаюсь с обработкой данных</label>
                 </div>
                 <!-- /.policy -->
                 <button class="button button--primary footer__button">Отправить</button>
                 
             </form>
+           
             
 
            </div>
+           <div class="contacts footer__contacts">
+            <h3 class= "address footer__address">Ростов на дону, Торговый центр Plaza
+                Прямой телефон +7 (999) 768 32 99</h3>
+                <div class="icon footer__icon">
+                    
+                     <a href="#" class="footer__icon-img"><img src="http://sdemyanova.ru/repain-diseng/src/img/email.svg" alt=""></a>
+                     <a href="#" class="footer__icon-img"><img src="http://sdemyanova.ru/repain-diseng/src/img/inst.svg" alt=""></a>
+
+
+                </div>
+        </div>
            <div class="map footer__map" id="map">
             
         </div>
            
        </div>
+       
        <div class="footer__menu">
            <div class="container">
                
         <div class="menu container__menu">
-            <div class="logo menu__logo wow pulse" data-wow-iteration="3" >Repair Design Project</div>
+            <div class="logo menu__logo menu__logo-none wow pulse" data-wow-iteration="3" >Repair Design Project</div>
             <nav class="nav menu__nav">
                 <a href="#" class="nav__item">Главная</a>
                 <a href="#" class="nav__item">ПРоекты</a>
@@ -458,6 +473,7 @@
        </div>
 
    </footer>
+   
 
 
     <!-- ----footer -------->
@@ -486,13 +502,14 @@
             
             
             <div class="policy modal__policy">
-                <input type="checkbox" name="policy-checkbox" class="policy__checkbox" id="policy-checkbox" checked>
-                <label for="policy-checkbox" class="policy__label  ">я соглашаюсь с обработкой данных</label>
+                <input type="checkbox" name="policy-checkbox" class="policy__checkbox" id="policy-checkbox-modal" checked>
+                <label for="policy-checkbox-modal" class="policy__label ">я соглашаюсь с обработкой данных</label>
             </div>
             <!-- /.policy -->
             <button class="button button--primary modal__button">Отправить заявку</button>
             
         </form>
+
         
     </div>
     <!-- /.modal__dialog -->

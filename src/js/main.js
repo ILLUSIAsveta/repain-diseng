@@ -37,9 +37,9 @@ $(document).ready(function (){
           
         modal.toggleClass('modal--visible');
     });
-        closeBtn.on('click', function(){
+         closeBtn.on('click', function(){
           modal.removeClass('modal--visible');;
-        });
+         });
 
              
 
@@ -110,8 +110,11 @@ $('window').scroll(function(){
         minlength: 2,
         maxlength: 15,
       },
-      userPhone: "required",
-      // Правило объект
+      userPhone: {
+        required: true,
+        minlength: 10,
+        
+      },
       userEmail: {
         required: true,
         email: true
@@ -126,7 +129,11 @@ $('window').scroll(function(){
       minlength: "Имя не короче двух букв",
       maxlength: "Имя не длинее 15 символов"
     },
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required:"Телефон обязателен",
+        minlength: "Не верный  номер ",
+       
+      },
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате name@domain.com"
@@ -223,7 +230,8 @@ $('window').scroll(function(){
   
   // Маска для ввода телефона
 
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+  $('[type=tel]').mask('+7(000) 00-00-000',
+);
 
 // Подключение карты
 
@@ -256,9 +264,6 @@ $('window').scroll(function(){
             // её "ножки" (точки привязки).
             iconImageOffset: [-5, -38]
         });
-
-       
-
     myMap.geoObjects
         .add(myPlacemark)
         
