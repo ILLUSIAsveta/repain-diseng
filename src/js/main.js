@@ -113,7 +113,7 @@ $('window').scroll(function(){
       userPhone: {
         required: true,
         minlength: 10,
-        
+ 
       },
       userEmail: {
         required: true,
@@ -131,15 +131,18 @@ $('window').scroll(function(){
     },
       userPhone: {
         required:"Телефон обязателен",
-        minlength: "Не верный  номер ",
+        minlength: "Не верный номер ",
+        
        
       },
       userEmail: {
         required: "Обязательно укажите email",
-        email: "Введите в формате name@domain.com"
+        email: "Не верный email"
       }
     }
   });
+
+
 
   $('.footer__form').validate({
     errorClass: "invalid",
@@ -150,8 +153,15 @@ $('window').scroll(function(){
         minlength: 2,
         maxlength: 15,
       },
-      userPhone: "required",
-      // compound rule
+      userPhone: {
+        required: true,
+        minlength: 10,
+        
+      },
+      userQuestion: {
+        required: true,
+        maxlength: 40,
+      },
      
     },
     errorElement: "div",
@@ -161,42 +171,23 @@ $('window').scroll(function(){
       minlength: "Имя не короче двух букв",
       maxlength: "Имя не длинее 15 символов"
     },
-      userPhone: "Заполните поле",
+      userPhone: {
+        required:"Телефон обязателен",
+        minlength: "Не верный номер ",
+        
+      },
+      userQuestion:{
+        required: "Заполните поле",
+        maxlength: "Сообщение не более 40 символов"
+
+      }
       
     }
+  
+
   });
 
-  $('.footer__form').validate({
-    errorClass: "invalid",
-    rules: {
-      // simple rule, converted to {required:true}
-      userName: {
-        required: true,
-        minlength: 2,
-        maxlength: 15
-      },
-      userPhone: "required",
-      // compound rule
-      email: {
-        required: true,
-        email: true
-      }
-    },
-    errorElement: "div",
-    messages: {
-      userName: {
-      required: "Заполните поле",
-      minlength: "Имя не короче двух букв",
-      maxlength: "Имя не длинее  15 букв"
-    },
-      userPhone: "Заполните поле",
-      userEmail: {
-        required: "Обязательно укажите email",
-        email: "Введите корректный email"
-      }
-    }
-  });
-
+ 
 
   $('.control__form').validate({
     errorClass: "invalid",
@@ -207,22 +198,26 @@ $('window').scroll(function(){
         minlength: 2,
         maxlength: 15
       },
-      // compound rule
-      userPhone: "required",
-      
+      userPhone: {
+        required: true,
+        minlength: 10,
+        
+      },
     },
+    errorElement: "div",
     messages: {
       userName: {
       required: "Заполните поле",
       minlength: "Имя не короче двух букв",
       maxlength: "Имя не длинее  15 букв"
     },
-      userPhone: "Заполните поле",
+    userPhone: {
+      required:"Телефон обязателен",
+      minlength: "Не верный номер ",
+      
+    },
 
-      userQuestion: {
-        required: "Заполните поле",
-        maxlength: "Сообщение не больше 100 символов"
-      },
+     
     }
     
 
@@ -230,8 +225,7 @@ $('window').scroll(function(){
   
   // Маска для ввода телефона
 
-  $('[type=tel]').mask('+7(000) 00-00-000',
-);
+  $('[type=tel]').mask('+7(000) 00-00-000');
 
 // Подключение карты
 

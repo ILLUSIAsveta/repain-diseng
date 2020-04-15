@@ -126,10 +126,10 @@
                 font-size: 0.85rem
                 margin-left: 1.3rem
         .row
-            margin-left: 1.1rem
+            margin-left: auto
             display: flex
             flex-direction: column
-            align-items: flex-start
+            
            
 
         .section-title
@@ -151,22 +151,29 @@
                 max-width: 19rem
 
         .swiper-slide
+            &__img
+                max-height: 14.41rem
+                max-width: 21.285rem
             &__heading
                 font-size: 1rem
                 margin-top: 1.8rem
             &__text
+               flex-basis: 47% 
                margin-bottom: 0.1rem
                &:last-child
                 margin-bottom: 4rem
         
-        .col-50
+        .col-45
            
-            width: 100% 
+            width: 93% 
             margin-bottom: 2.1rem 
-            &--none
+        .col-55
+               
+            width: 92% 
+            margin-left: 0
+            justify-content: flex-start
+               
                 
-                max-width: 90%
-                margin: 0 auto
 
             &__heading
                 font-family: 'Yeseva One', cursive
@@ -181,9 +188,10 @@
                 font-size: 1rem
                 line-height: 1.35rem
             &__img
-                width: 100%
+                
+                max-width: 23.4rem
                 height: 14.417rem
-                background-size: contain
+                background-size: cover
         .btn_up
             position: fixed
             bottom: 1.8rem
