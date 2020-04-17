@@ -396,7 +396,7 @@ template {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  font-style: 1.285rem;
+  font-size: 1.285rem;
   color: #FFFFFF;
   padding: 0.5rem 0; }
   .input::-webkit-input-placeholder {
@@ -441,14 +441,21 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-div.invalid {
-  width: auto;
-  height: 0.1rem;
+div.error {
   color: tomato;
-  margin: 0; }
+  background-color: #FFFFFF;
+  position: absolute; }
+
+div.invalid {
+  color: tomato;
+  background-color: #131313;
+  position: absolute; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
+
+input-group {
+  position: relative; }
 
 .btn_up {
   position: fixed;
@@ -780,6 +787,7 @@ input.invalid {
   flex-wrap: wrap; }
 
 .control__input {
+  color: #131313;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
   .control__input::-webkit-input-placeholder {
     font-family: 'Futura Medium';
@@ -1043,6 +1051,7 @@ input.invalid {
     display: flex;
     flex-wrap: wrap; }
   .footer__input {
+    margin-top: 0.1rem;
     padding-top: 0.3rem; }
     .footer__input-group {
       display: flex;

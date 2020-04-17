@@ -102,7 +102,7 @@ $('window').scroll(function(){
   // Валидация формы
  
   $('.modal__form').validate({
-    errorClass: "invalid",
+    
     rules: {
       // Строчное правило {required:true}
       userName: {
@@ -121,6 +121,7 @@ $('window').scroll(function(){
       }
       
     }, // Правило сообщений
+    errorClass: "invalid",
     errorElement: "div",
     messages: {
       userName: {
@@ -145,7 +146,8 @@ $('window').scroll(function(){
 
 
   $('.footer__form').validate({
-    errorClass: "invalid",
+    
+    
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -164,6 +166,7 @@ $('window').scroll(function(){
       },
      
     },
+    errorClass: "invalid",
     errorElement: "div",
     messages: {
       userName: {
@@ -190,7 +193,8 @@ $('window').scroll(function(){
  
 
   $('.control__form').validate({
-    errorClass: "invalid",
+
+    
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -204,6 +208,7 @@ $('window').scroll(function(){
         
       },
     },
+   
     errorElement: "div",
     messages: {
       userName: {

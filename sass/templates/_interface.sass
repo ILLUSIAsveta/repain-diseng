@@ -45,7 +45,7 @@
     background-color: transparent
     border: none
     border-bottom: 1px solid rgba(255, 255, 255, 0.15)    
-    font-style: 1.285rem
+    font-size: 1.285rem
     color: $light
     padding: 0.5rem 0
     
@@ -76,16 +76,27 @@
             margin-right: 0.4rem
         &--center  
             justify-content: center
-div
-    &.invalid   
-        
-        width: auto
-        height: 0.1rem
-        color: tomato 
-        margin: 0
+
+
+div.error    
+    
+    color: tomato 
+    background-color: $light
+    position: absolute
+
+div.invalid    
+    
+    color: tomato 
+    background-color: $dark
+    position: absolute
+
 input   
     &.invalid 
-        border-bottom: 1px solid tomato          
+        border-bottom: 1px solid tomato  
+        
+input
+    &-group                
+        position: relative
 
         
 .btn_up
