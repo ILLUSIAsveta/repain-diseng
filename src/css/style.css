@@ -448,7 +448,7 @@ div.error {
 
 div.invalid {
   color: tomato;
-  background-color: #131313;
+  background-color: #181818;
   position: absolute; }
 
 input.invalid {

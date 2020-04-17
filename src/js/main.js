@@ -100,7 +100,9 @@ $('window').scroll(function(){
   new WOW().init();
 
   // Валидация формы
- 
+  jQuery.validator.addMethod("checkMask", function(value, element) {
+    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
+});
   $('.modal__form').validate({
     
     rules: {
@@ -112,14 +114,17 @@ $('window').scroll(function(){
       },
       userPhone: {
         required: true,
-        minlength: 10,
- 
+        checkMask: true,
+        
       },
-      userEmail: {
-        required: true,
-        email: true
-      }
+
       
+      userEmail: {
+       
+        required: true,
+        email: true,
+      }
+    
     }, // Правило сообщений
     errorClass: "invalid",
     errorElement: "div",
@@ -130,11 +135,10 @@ $('window').scroll(function(){
       minlength: "Имя не короче двух букв",
       maxlength: "Имя не длинее 15 символов"
     },
-      userPhone: {
+   userPhone: {
         required:"Телефон обязателен",
-        minlength: "Не верный номер ",
+        checkMask: "Не верный номер ",
         
-       
       },
       userEmail: {
         required: "Обязательно укажите email",
@@ -144,7 +148,9 @@ $('window').scroll(function(){
   });
 
 
-
+  jQuery.validator.addMethod("checkMask", function(value, element) {
+    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
+});
   $('.footer__form').validate({
     
     
@@ -157,7 +163,7 @@ $('window').scroll(function(){
       },
       userPhone: {
         required: true,
-        minlength: 10,
+        checkMask: true,
         
       },
       userQuestion: {
@@ -176,7 +182,7 @@ $('window').scroll(function(){
     },
       userPhone: {
         required:"Телефон обязателен",
-        minlength: "Не верный номер ",
+        checkMask: "Не верный номер ",
         
       },
       userQuestion:{
@@ -190,9 +196,11 @@ $('window').scroll(function(){
 
   });
 
- 
-
+  jQuery.validator.addMethod("checkMask", function(value, element) {
+    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
+});
   $('.control__form').validate({
+    
 
     
     rules: {
@@ -203,8 +211,9 @@ $('window').scroll(function(){
         maxlength: 15
       },
       userPhone: {
+        checkMask: true,
         required: true,
-        minlength: 10,
+        
         
       },
     },
@@ -214,11 +223,12 @@ $('window').scroll(function(){
       userName: {
       required: "Заполните поле",
       minlength: "Имя не короче двух букв",
-      maxlength: "Имя не длинее  15 букв"
+      maxlength: "Имя не длинее  15 букв",
+      range: "короткий номер",
     },
     userPhone: {
       required:"Телефон обязателен",
-      minlength: "Не верный номер ",
+      checkMask: "Не верный номер ",
       
     },
 
@@ -228,9 +238,11 @@ $('window').scroll(function(){
 
   });
   
+  
   // Маска для ввода телефона
 
-  $('[type=tel]').mask('+7(000) 00-00-000');
+  
+  $('[type=tel]').mask("+7(999)999-9999", {autoclear: false});
 
 // Подключение карты
 
