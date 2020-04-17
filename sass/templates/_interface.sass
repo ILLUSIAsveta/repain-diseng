@@ -56,17 +56,25 @@
 
 .policy
     &__checkbox  
+        
         opacity: 0
         visibility: hidden
-        &:checked +
+        &:checked ~
             .policy__label
+                
                 &::before
+                   
                     background: $primary url('../img/modal/check.svg') no-repeat center / 0.8rem
     &__label
+       
         display: flex
         align-items: center
         font-size: 1.142rem
+        
+     
+            
         &::before
+            margin-top: 0.3rem
             content: ''    
             width: 18px
             height: 18px
@@ -79,16 +87,21 @@
 
 
 div.error    
-    
+   
+
     color: tomato 
     background-color: $light
     position: absolute
+    
+    
 
 div.invalid    
-    
+   
     color: tomato 
     background-color: $black
     position: absolute
+    
+    
 
 input   
     &.invalid 

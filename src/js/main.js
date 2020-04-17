@@ -123,7 +123,12 @@ $('window').scroll(function(){
        
         required: true,
         email: true,
-      }
+      },
+      policy: {
+        required: true,
+
+      },
+    
     
     }, // Правило сообщений
     errorClass: "invalid",
@@ -143,7 +148,12 @@ $('window').scroll(function(){
       userEmail: {
         required: "Обязательно укажите email",
         email: "Не верный email"
+      },
+      policy:{
+
+        required: "Обязательное поле",
       }
+
     }
   });
 
@@ -170,6 +180,10 @@ $('window').scroll(function(){
         required: true,
         maxlength: 40,
       },
+      policy: {
+        required: true,
+
+      }
      
     },
     errorClass: "invalid",
@@ -187,8 +201,13 @@ $('window').scroll(function(){
       },
       userQuestion:{
         required: "Заполните поле",
-        maxlength: "Сообщение не более 40 символов"
+        maxlength: "Сообщение не более 40 символов",
 
+      },
+      policy:{
+        
+        required: "Обязательное поле",
+      
       }
       
     }
@@ -216,6 +235,12 @@ $('window').scroll(function(){
         
         
       },
+
+      policy: {
+        required: true,
+
+      },
+    
     },
    
     errorElement: "div",
@@ -231,6 +256,12 @@ $('window').scroll(function(){
       checkMask: "Не верный номер ",
       
     },
+    policy:{
+        
+      required: "Обязательное поле",
+    
+    }
+    
 
      
     }
